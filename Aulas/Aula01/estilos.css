@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#tela {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    border-bottom: green 30px solid;
+    background: linear-gradient(#87ceeb, #e0f6ff);
+}
+
+.nuvens {
+    position: absolute;
+    top: 25px;
+    width: 275px;
+    animation: animaNuvens 20s infinite linear;
+}
+
+@keyframes animaNuvens {
+    from {
+        right: -275px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+.mario {
+    position: absolute;
+    bottom: 0;
+    width: 75px;
+}
+
+.pulo {
+    animation: animaMario 500ms ease-out;
+}
+
+@keyframes animaMario {
+    0% {
+        bottom: 0;
+    }
+
+    50% {
+        bottom: 180px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
+
+.cano {
+    position: absolute;
+    bottom: 0;
+    width: 40px;
+    animation: animaCano 1s infinite linear;
+}
+
+@keyframes animaCano {
+    from {
+        right: -40px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+.gameover {
+    position: absolute;
+    bottom: 50%;
+    left: 10%;
+    width: 80%;
+    visibility: hidden;
+}
+
+.reset {
+    position: absolute;
+    left: 10px;
+    width: 100px;
+}
+
+.cima {
+    position: absolute;
+    right: 10px;
+    width: 100px;
+}
