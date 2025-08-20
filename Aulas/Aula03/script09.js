@@ -7,17 +7,17 @@ http.createServer(
 
     let endereco = `http://localhost:3000${req.url}`
     let dados = url.parse(endereco, true)
+    let aluno = dados.query
 
     res.write('<html>')
     res.write('<head>')
     res.write('<title>Aula de Node.js</title>')
     res.write('</head>')
     res.write('<body>')
-    res.write('<h1>Barra de Endereço</h1>')
-    res.write(`<p>Endereço completo: ${endereco}</p>`)
-    res.write(`<p>Domínio principal: ${dados.host}</p>`)
-    res.write(`<p>Subdomínio: ${dados.pathname}</p>`)
-    res.write(`<p>Argumentos: ${dados.search}</p>`)
+    res.write('<h1>Aluno de Mobile</h1>')
+    res.write(`<p>Matrícula: ${aluno.mat}</p>`)
+    res.write(`<p>Nome: ${aluno.nome}</p>`)
+    res.write(`<p>Sobrenome: ${aluno.sobrenome}</p>`)
     res.write('</body>')
     res.write('</html>')
 
