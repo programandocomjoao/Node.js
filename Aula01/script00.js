@@ -1,1 +1,0 @@
-console.log('Aprender Node.js é de arrepiar os cabelos da churreia')
