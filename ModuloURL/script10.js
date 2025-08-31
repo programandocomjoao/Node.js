@@ -3,7 +3,7 @@ let fs = require('fs')
 
 http.createServer(
   function(req, res) {
-    fs.readFile('pagina10.html',
+    fs.readFile('supermariobros.html',
       function(erro, dados) {
         res.writeHead(200, {'Content-Type':'text/html; charset=UTF-8'})
         res.write(dados)
@@ -11,6 +11,6 @@ http.createServer(
       }
     )
   }
-).listen(3000)
+).listen(8080)
 
-console.log('Servidor em operação na porta 3000. Pressione Ctrl + C para derrubar.')
+console.log('Servidor em operação na porta 8080. Pressione Ctrl + C para derrubar.')
