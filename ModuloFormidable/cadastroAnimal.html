@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Animal</title>
+  </head>
+
+  <body>
+    <h1>Cadastro de Animal</h1>  
+
+    <form action="cadastroAnimal" method="post" enctype="multipart/form-data">
+      <fieldset>
+        <legend>DADOS DO ANIMAL</legend>
+
+        <p><label for="nome">Nome:</label><br>
+          <input type="text" id="nome" name="nome" autofocus>
+        </p>
+
+        <fieldset>
+          <legend>Espécie:</legend>
+
+          <input type="radio" id="canina" name="especie" value="Canina">
+          <label for="canina">Canina</label>
+
+          <input type="radio" id="felina" name="especie" value="Felina">
+          <label for="felina">Felina</label>
+        </fieldset>
+
+        <p><label for="raca">Raça:</label><br>
+          <input type="text" id="raca" name="raca">
+        </p>
+
+        <hr>
+
+        <p><input type="submit" value="Cadastrar Animal"></p>
+      </fieldset>
+    </form>
+  </body>
+</html>
