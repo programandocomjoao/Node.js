@@ -5,14 +5,14 @@ conexao.connect(
     if(erro)
       throw erro
     else {
-      let operacao = 'SELECT * FROM animal'
+      let operacao = "DELETE FROM animal WHERE id = 8"
 
       conexao.query(operacao,
-        function(erro, resultado, campos) {
+        function(erro) {
           if(erro)
             throw erro
           else
-            console.log(`${resultado[5].id} | ${resultado[5].nome} | ${resultado[5].especie} | ${resultado[5].raca}`)
+            console.log('Animal excluído com sucesso!')
         }
       )
     }

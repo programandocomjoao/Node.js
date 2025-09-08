@@ -5,14 +5,14 @@ conexao.connect(
     if(erro)
       throw erro
     else {
-      let operacao = 'SELECT * FROM animal'
+      let operacao = "UPDATE animal SET raca = 'Vira-Lata' WHERE raca = 'Street Dog'"
 
       conexao.query(operacao,
-        function(erro, resultado, campos) {
+        function(erro) {
           if(erro)
             throw erro
           else
-            console.log(`${resultado[5].id} | ${resultado[5].nome} | ${resultado[5].especie} | ${resultado[5].raca}`)
+            console.log('Animal alterado com sucesso!')
         }
       )
     }

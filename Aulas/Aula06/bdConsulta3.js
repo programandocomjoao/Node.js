@@ -12,7 +12,8 @@ conexao.connect(
           if(erro)
             throw erro
           else
-            console.log(`${resultado[5].id} | ${resultado[5].nome} | ${resultado[5].especie} | ${resultado[5].raca}`)
+            for(let i = 0; i < resultado.length; i++)
+              console.log(`${resultado[i].id} | ${resultado[i].nome} | ${resultado[i].especie} | ${resultado[i].raca}`)
         }
       )
     }
