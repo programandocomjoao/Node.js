@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #dddddd;
+  min-height: 100vh;
+  padding: 10px;
+  text-align: left;
+}
+
+#titulo {
+  text-align: center;
+}
