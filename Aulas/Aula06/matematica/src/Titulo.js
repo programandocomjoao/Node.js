@@ -1,6 +1,6 @@
 function Titulo() {
   return(
-    <h1 id="titulo">CÁLCULO DO DELTA</h1>
+    <h1 id="titulo">Cálculo do Delta</h1>
   )
 }
 

@@ -3,12 +3,12 @@
 }
 
 .App-header {
-  background-color: #dddddd;
+  background-color: #cccccc;
   min-height: 100vh;
   padding: 10px;
   text-align: left;
 }
 
-#titulo {
+.titulo {
   text-align: center;
 }
