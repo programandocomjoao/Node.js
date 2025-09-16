@@ -1,0 +1,65 @@
+.App {
+  text-align: center;
+  background-color: #cccccc;
+  height: 100vh;
+}
+
+.App-header {
+  text-align: center;
+  background-color: #eeeebb;
+  width: 93%;
+  max-width: 300px;
+  margin: auto;
+  padding: 10px;
+  border: brown 3px solid;
+}
+
+.logo {
+  width: 75%;
+}
+
+#tela1 {
+  width: 90%;
+  height: 75px;
+  border: black 1px solid;
+  font-family: courier new;
+  font-size: 30pt;
+  font-weight: bold;
+  background-color: black;
+  color: red;
+  text-align: center;
+}
+
+#tela2 {
+  width: 90%;
+  height: 25px;
+  border: black 1px solid;
+  font-family: courier new;
+  font-size: 15pt;
+  font-weight: bold;
+  background-color: black;
+  color: red;
+  text-align: center;
+}
+
+#botaoA, #botaoB, #botaoC, #botaoD {
+  width: 45%;
+  height: 100px;
+  background-color: red;
+  border: black 1px solid;
+  font-size: 24pt;
+  color: white;
+}
+
+#botaoB {background-color: yellow;}
+#botaoC {background-color: blue;}
+#botaoD {background-color: green;}
+
+#botaoStart {
+  width: 90%;
+  height: 30px;
+  border: black 1px solid;
+  background-color: white;
+  font-size: 11pt;
+  color: blue;
+}
