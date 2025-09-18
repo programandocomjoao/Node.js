@@ -1,6 +1,6 @@
 import './App.css';
 import Titulo from './Titulo';
-import Tela from './Tela';
+import Telas from './Telas';
 import Controle from './Controle';
 import Start from './Start';
 
@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Titulo />
-        <Tela />
+        <Telas />
         <Controle />
         <Start />
       </header>
