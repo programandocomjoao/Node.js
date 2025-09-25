@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 05</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <h1>Concessionária</h1>
+
+    <script>
+      class Carro {
+        constructor(marca) {
+          this.marca = marca
+        }
+
+        exibirMsg() {
+          return `A montadora é ${this.marca}`
+        }
+      }
+
+      class Modelo extends Carro {
+        constructor(marca, descricao, cor, ano) {
+          super(marca)
+          this.descricao = descricao
+          this.cor = cor
+          this.ano = ano
+        }
+
+        exibirDados() {
+          return `${this.exibirMsg()} e o modelo é ${this.descricao} | ${this.cor} | ${this.ano}`
+        }
+      }
+
+      let marca = prompt('Digite a marca do carro:', '')
+      let descricao = prompt('Digite a descrição do modelo:', '')
+      let cor = prompt('Digite a cor do carro:', '')
+      let ano = prompt('Digite o ano do carro:', '')
+      modelo = new Modelo(marca, descricao, cor, ano)
+
+      document.write(`<p>${modelo.exibirDados()}</p>`)
+    </script>
+  </body>
+</html>

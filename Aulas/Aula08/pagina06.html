@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página 02</title>
+    <title>Página 06</title>
     <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -13,29 +13,33 @@
     <div id="root"></div>
 
     <script type="text/babel">
-      function Titulo() {
-        return(
-          <h1>Games Clássicos</h1>
-        )
+      class Titulo extends React.Component {
+        render() {
+          return <h1>Games Clássicos</h1>
+        }
       }
 
-      function Game() {
-        return(
-          <ul>
-            <li>Título: Seaquest</li>
-            <li>Ano de lançamento: 1983</li>
-            <li>Console: Atari 2600</li>
-          </ul>
-        )
+      class Game extends React.Component {
+        render() {
+          return(
+            <ul>
+              <li>Título: Seaquest</li>
+              <li>Ano de lançamento: 1983</li>
+              <li>Console: Atari 2600</li>
+            </ul>
+          )
+        }
       }
 
-      const App = function() {
-        return(
-          <>
-            <Titulo />
-            <Game />
-          </>
-        )
+      class App extends React.Component {
+        render() {
+          return(
+            <>
+              <Titulo />
+              <Game />
+            </>
+          )
+        }
       }
 
       ReactDOM.render(

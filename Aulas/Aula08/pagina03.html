@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página 02</title>
+    <title>Página 03</title>
     <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -19,12 +19,12 @@
         )
       }
 
-      function Game() {
+      function Game(props) {
         return(
           <ul>
-            <li>Título: Seaquest</li>
-            <li>Ano de lançamento: 1983</li>
-            <li>Console: Atari 2600</li>
+            <li>Título: {props.titulo}</li>
+            <li>Ano de lançamento: {props.ano}</li>
+            <li>Console: {props.console}</li>
           </ul>
         )
       }
@@ -33,7 +33,11 @@
         return(
           <>
             <Titulo />
-            <Game />
+            <Game titulo="Seaquest" ano="1983" console="Atari 2600" />
+            <Game titulo="Super Mario Bros" ano="1985" console="Nintendo" />
+            <Game titulo="Sonic The Hedgehog" ano="1991" console="Master System" />
+            <Game titulo="Sonic The Hedgehog" ano="1990" console="Mega Drive" />
+            <Game titulo="Super Mario World" ano="1991" console="Super Nintendo" />
           </>
         )
       }

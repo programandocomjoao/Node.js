@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 08</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <h1>Arrow Function em React.js</h1>
+
+    <p id="msg"></p>
+
+    <script>
+      exibirMsg = () => {
+        return 'Aprender React.js é construir o futuro!'
+      }
+
+      ocultarMsg = () => {
+        return ''
+      }
+    </script>
+
+    <input type="button" value="Exibir Mensagem" onclick="
+      document.getElementById('msg').innerHTML = exibirMsg()
+    ">
+
+    <input type="button" value="Ocultar Mensagem" onclick="
+      document.getElementById('msg').innerHTML = ocultarMsg()
+    ">
+  </body>
+</html>

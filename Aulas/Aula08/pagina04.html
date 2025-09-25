@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 04</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <h1>Concessionária</h1>
+
+    <script>
+      class Carro {
+        constructor(marca) {
+          this.marca = marca
+        }
+
+        exibirMsg() {
+          return `A montadora é ${this.marca}`
+        }
+      }
+
+      let marca = prompt('Digite a marca do carro:', '')
+      carro = new Carro(marca)
+
+      document.write(`<p>${carro.marca}</p>`)
+      document.write(`<p>${carro.exibirMsg()}</p>`)
+    </script>
+  </body>
+</html>

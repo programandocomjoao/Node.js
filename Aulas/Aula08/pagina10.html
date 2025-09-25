@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 10</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <h1>Mini-Calculadora</h1>
+
+    <p id="msg"></p>
+
+    <script>
+      document.getElementById('msg').innerHTML = 'Resultado'
+
+      somar = (n1, n2) => `Soma = ${n1 + n2}`
+      subtrair = (n1, n2) => `Subtração = ${n1 - n2}`
+      multiplicar = (n1, n2) => `Multiplicação = ${n1 * n2}`
+      dividir = (n1, n2) => `Divisão = ${n1 / n2}`
+    </script>
+
+    <input type="text" id="n1" size="5" autofocus>
+    <input type="text" id="n2" size="5">
+
+    <input type="button" value=" + " onclick="
+      let n1 = Number(document.getElementById('n1').value)
+      let n2 = Number(document.getElementById('n2').value)
+      document.getElementById('msg').innerHTML = somar(n1, n2)
+    ">
+
+    <input type="button" value=" - " onclick="
+      n1 = Number(document.getElementById('n1').value)
+      n2 = Number(document.getElementById('n2').value)
+      document.getElementById('msg').innerHTML = subtrair(n1, n2)
+    ">
+
+    <input type="button" value=" x " onclick="
+      n1 = Number(document.getElementById('n1').value)
+      n2 = Number(document.getElementById('n2').value)
+      document.getElementById('msg').innerHTML = multiplicar(n1, n2)
+    ">
+
+    <input type="button" value=" : " onclick="
+      n1 = Number(document.getElementById('n1').value)
+      n2 = Number(document.getElementById('n2').value)
+      document.getElementById('msg').innerHTML = dividir(n1, n2)
+    ">
+  </body>
+</html>
