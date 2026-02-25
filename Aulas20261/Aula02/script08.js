@@ -1,10 +1,9 @@
 let http = require('http')
-let data = require('./data')
 
 http.createServer(
   function(req, res) {
     res.writeHead(200, {'Content-Type':'text/plain; charset=UTF-8'})
-    res.write(`A data e hora atuais são ${data.informarData()}`)
+    res.write(req.url)
     res.end()
   }
 ).listen(3000)
