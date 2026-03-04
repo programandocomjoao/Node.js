@@ -7,17 +7,17 @@ http.createServer(
 
     let endereco = 'http://localhost:3000' + req.url
     let dados = url.parse(endereco, true)
+    let campos = dados.query
 
     res.write('<html>')
     res.write('<head>')
     res.write('<title>Mobile</title>')
     res.write('</head>')
     res.write('<body>')
-    res.write('<h1>Desenvolvimento Mobile</h1>')
-    res.write(`<p>Endereço completo: ${endereco}</p>`)
-    res.write(`<p>Domínio principal: ${dados.host}</p>`)
-    res.write(`<p>Subdomínio: ${dados.pathname}</p>`)
-    res.write(`<p>Parâmetros: ${dados.search}</p>`)
+    res.write('<h1>Aluno de Mobile</h1>')
+    res.write(`<p>Nome: ${campos.nome}</p>`)
+    res.write(`<p>Sobrenome: ${campos.sobrenome}</p>`)
+    res.write(`<p>Nome completo: ${campos.nome} ${campos.sobrenome}</p>`)
     res.write('</body>')
     res.write('</html>')
     res.end()
