@@ -1,1 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Animal</title>
+  </head>
 
+  <body>
+    <h1>Cadastro de Animal</h1>  
+
+    <form action="gravaAnimal" method="post" enctype="multipart/form-data">
+      <fieldset>
+        <legend>Dados do Animal</legend>
+
+        <p><label for="nome">NOME:</label><br>
+          <input type="text" id="nome" name="nome" size="30" autofocus>
+        </p>
+
+        <p><label for="raca">RAÇA:</label><br>
+          <input type="text" id="raca" name="raca" size="30">
+        </p>
+
+        <hr>
+
+        <p><input type="submit" value="CADASTRAR"></p>
+      </fieldset>
+    </form>
+  </body>
+</html>
