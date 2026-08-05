@@ -1,1 +1,1 @@
-
+console.log('Aprender Node.js é construir o futuro!')
