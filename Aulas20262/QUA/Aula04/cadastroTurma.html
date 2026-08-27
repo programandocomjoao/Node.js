@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turmas de SI</title>
+  </head>
+
+  <body>
+    <h1>Cadastro de Turma</h1>
+
+    <form action="turma" method="post" enctype="multipart/form-data">
+      <fieldset>
+        <legend>DADOS DA TURMA</legend>
+
+        <p><label for="codigo">CÓDIGO:</label><br>
+          <input type="text" id="codigo" name="codigo" size="30">
+        </p>
+
+        <p><label for="descricao">DESCRIÇÃO:</label><br>
+          <input type="text" id="descricao" name="descricao" size="30">
+        </p>
+
+        <p><label for="ementa">Ementa:</label><br>
+          <input type="file" id="ementa" name="ementa">
+        </p>
+
+        <p><input type="submit" value="Cadastrar Turma"></p>
+      </fieldset>
+    </form>
+  </body>
+</html>
