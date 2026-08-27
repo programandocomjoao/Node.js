@@ -1,1 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turmas de SI</title>
+  </head>
 
+  <body>
+    <h1>Cadastro de Turmas de SI</h1>
+
+    <form action="cadastroTurma" method="post" enctype="multipart/form-data">
+      <fieldset>
+        <legend>DADOS DA TURMA</legend>
+
+        <p><label for="descricao">DESCRIÇÃO:</label><br>
+          <input type="text" id="descricao" name="descricao" size="30" autofocus>
+        </p>
+
+        <p><label for="disciplina">DISCIPLINA:</label><br>
+          <input type="text" id="disciplina" name="disciplina" size="30" list="disciplinas">
+        </p>
+
+        <datalist id="disciplinas">
+          <option value="Programação de Computadores I"></option>
+          <option value="Programação de Computadores II"></option>
+          <option value="Programação de Computadores III"></option>
+          <option value="Desenvolvimento Web I"></option>
+          <option value="Desenvolvimento Web II"></option>
+          <option value="Desenvolvimento Web II"></option>
+          <option value="Desenvolvimento Mobile"></option>
+          <option value="Sistemas Distribuídos"></option>
+          <option value="Estrutura de Dados"></option>
+          <option value="Programação Orientada a Objetos"></option>
+        </datalist>
+
+        <p><label for="ementa">Ementa:</label>
+          <input type="file" id="ementa" name="ementa">
+        </p>
+
+        <p><input type="submit" value="Cadastrar Turma"></p>
+      </fieldset>
+    </form>
+  </body>
+</html>
