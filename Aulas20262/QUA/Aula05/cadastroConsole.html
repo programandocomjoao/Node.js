@@ -1,1 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consoles de Videogame</title>
+  </head>
 
+  <body>
+    <h1>Cadastro de Consoles</h1>
+
+    <form action="cadastroConsole" method="post" enctype="multipart/form-data">
+      <fieldset>
+        <legend>DADOS DO CONSOLE</legend>
+
+        <p><label for="ano">ANO DE LANÇAMENTO:</label><br>
+          <input type="number" id="ano" name="ano" size="10" min="1972" max="2026">
+        </p>
+
+        <p><label for="descricao">DESCRIÇÃO:</label><br>
+          <input type="text" id="descricao" name="descricao" size="30">
+        </p>
+
+        <p><input type="submit" value="Cadastrar Console"></p>
+      </fieldset>
+    </form>
+  </body>
+</html>
